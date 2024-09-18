@@ -13,8 +13,8 @@ public class HomePage extends BasePage{
     public By writer_name = By.xpath("//a[contains(text(),'হুমায়ূন আহমেদ')]");
     public By book_categories1 = By.xpath("//label[contains(text(),'সমকালীন উপন্যাস')]");
     public By book_categories2 =By.xpath("//label[contains(text(),'রচনা সংকলন ও সমগ্র')]");
-    public By add_to_cart_book1 = By.xpath("//div[@title='কিছুক্ষণ হুমায়ূন আহমেদ']//div[1]//div[3]//button[1]");
-    public By add_to_cart_btn1 = By.xpath("//div[@title='হুমায়ূন আহমেদ রচনাবলী ২ হুমায়ূন আহমেদ']//div[1]//div[3]//button[1]");
+    public By add_to_cart_book1 = By.xpath("//body/div[@class='browse-page']/div[@class='container-fluid custom-container px-0']/div[@class='d-flex justify-content-start align-items-start']/div[@class='main-browse-content']/section[@class='browse__content']/div[@class='browse__content-books-wrapper']/div[@class='books-wrapper row']/div[@title='ফেরা হুমায়ূন আহমেদ']/div[contains(@class,'book-list-wrapper')]/a[1]");
+    public By add_to_cart_book_btn1 = By.xpath("//div[@title='ফেরা হুমায়ূন আহমেদ']//div[1]//div[3]//button[1]");
     public By cart_icon_btn = By.xpath("//img[@alt='cart']");
     public By check_out_button = By.xpath("//span[normalize-space()='Proceed to Check Out']");
     public By shipping_name = By.xpath("//div[@class='shipping-form-container']//input[@id='name']");

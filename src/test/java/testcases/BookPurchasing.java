@@ -65,7 +65,10 @@ public class BookPurchasing extends DriverSetup {
         Thread.sleep(5000);
         homePage.clickonelement(homePage.next_page_btn);
         Thread.sleep(3000);
-        homePage.clickonelement(homePage.add_to_cart_book1);
+        homePage.scrollintoelement(homePage.add_to_cart_book1);
+        homePage.hoveronelement(homePage.add_to_cart_book1);
+        Thread.sleep(3000);
+        homePage.clickonelement(homePage.add_to_cart_book_btn1);
         Thread.sleep(3000);
         homePage.clickonelement(homePage.cart_icon_btn);
         Thread.sleep(3000);
