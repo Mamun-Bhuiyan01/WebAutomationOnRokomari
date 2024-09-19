@@ -1,0 +1,1 @@
+[{"uid":"a2710cb5a753ce57","name":"openabrowser","time":{"start":1726677263990,"stop":1726677263996,"duration":6},"status":"broken","severity":"normal"},{"uid":"d83550a164cccd9a","name":"assertionOfBookPurchasSteps","time":{"start":1726754332374,"stop":1726754368644,"duration":36270},"status":"passed","severity":"normal"}]
