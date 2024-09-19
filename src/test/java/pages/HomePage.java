@@ -31,12 +31,7 @@ public class HomePage extends BasePage{
     public By reset_filter = By.xpath("//a[normalize-space()='Reset Filter']");
     public By recently_viewed = By.xpath("//h5[normalize-space()='Recently Viewed']");
     public By next_page_btn = By.xpath("//i[@class='ion-chevron-right']");
-//    public By products = By.xpath("//button[normalize-space()='Login']");
-//    public By testcases = By.xpath("//a[contains(text(),'Test Cases')]");
-//    public By apitesting = By.xpath("//a[normalize-space()='API Testing']");
-//    public By videotutorial = By.xpath("//a[normalize-space()='Video Tutorials']");
-//    public By contactus = By.xpath("//a[normalize-space()='Contact us']");
-//    public By logoutbutton = By.xpath("//*[text()=' Logout']");
+
 
     public void loadhomepage(){
         loadawebpage(homepageurl);
