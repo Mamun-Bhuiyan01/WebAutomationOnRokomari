@@ -18,7 +18,7 @@ public class TestHomePage extends DriverSetup {
     public void testHomePageTitle(){
         homePage.loadawebpage(homePage.homepageurl);
         homePage.addScreenshot("Home Page");
-        Assert.assertEquals(getDriver().getTitle(), "");
+        Assert.assertEquals(getDriver().getTitle(), "Buy Book Online - Best Online Book Shop in Bangladesh | Rokomari.com");
 
     }
 }

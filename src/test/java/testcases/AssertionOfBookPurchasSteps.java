@@ -1,5 +1,8 @@
 package testcases;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -21,7 +24,9 @@ public class AssertionOfBookPurchasSteps extends DriverSetup {
 
     }
 
-    @Test
+    @Test(description = "Assertion of book purchasing steps")
+    @Description("Checking that all the elements of book purchasing are present, visible, and clickable")
+    @Severity(SeverityLevel.BLOCKER)
     public void assertionOfBookPurchasSteps() throws InterruptedException {
 
         loginPage.clickonelement(loginPage.ion_arrow_down_btn);

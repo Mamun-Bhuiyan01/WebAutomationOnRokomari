@@ -13,7 +13,6 @@ import org.testng.annotations.Test;
 
 public class BookPurchasing extends DriverSetup {
 
-    private static final Logger log = LoggerFactory.getLogger(BookPurchasing.class);
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
 
@@ -24,15 +23,16 @@ public class BookPurchasing extends DriverSetup {
        //getDriver().get("https://www.rokomari.com");
     }
 
-    @Test(description = "Login and book purches")
-    @Description("User trying to login and purchasing a book")
+    @Test(description = "Login and book purchase")
+    @Description("User trying to login and purchase a book")
     @Severity(SeverityLevel.BLOCKER)
     public void loginAndBookPurchase() throws InterruptedException {
 
         loginPage.writeonelement(loginPage.loginemail, "rokomari@yopmail.com");
-        loginPage.addScreenshot("After entering the valid credentials");
+        loginPage.addScreenshot("After entering the email");
         loginPage.clickonelement(loginPage.nextbutton);
         loginPage.writeonelement(loginPage.loginpassword, "mamun1234");
+        loginPage.addScreenshot("After entering the password");
         Thread.sleep(3000);
         loginPage.scrollintoelement(loginPage.loginbutton2);
         Thread.sleep(5000);
@@ -46,7 +46,6 @@ public class BookPurchasing extends DriverSetup {
 //        Thread.sleep(10000);
         loginPage.clickonelement(loginPage.skip_btn);
         Thread.sleep(5000);
-
         homePage.hoveronelement(homePage.writer_button);
         Thread.sleep(9000);
         homePage.clickonelement(homePage.writer_name);
@@ -90,6 +89,7 @@ public class BookPurchasing extends DriverSetup {
         homePage.writeonelement(homePage.shipping_address,"Mohakhali, Dhaka, Bangladesh");
         homePage.scrollintoelement(homePage.payment_method);
         homePage.clickonelement(homePage.payment_method);
+        loginPage.addScreenshot("After filling up all the fields and click on the payment radio button");
         Thread.sleep(5000);
         loginPage.clickonelement(loginPage.ion_arrow_down_btn);
         Thread.sleep(5000);
